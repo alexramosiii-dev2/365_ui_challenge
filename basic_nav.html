@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Navigation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-family: "Afacad Flux", serif;
+        }
+
+        header {
+            padding: 12px 10%;
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .text-logo {
+            font-family: "Afacad Flux", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 32px;
+            line-height: 0;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        .header_nav_links ul{
+            list-style: none;
+            display: flex;
+            gap: 24px;
+        }
+
+        .header_nav_links a {
+            font-size: 18px;
+            color: #ffffff;
+            transition: all .25s ease;
+        }
+        .header_nav_links a:hover {
+            color: #f2e57e;
+        }
+
+        header .header_cta {
+            padding: 8px 24px;
+            font-size: 18px;
+            text-transform: uppercase;
+            background-color: #f2e57e;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all .25s ease;
+        }
+
+        header .header_cta:hover {
+            background-color: #f2e57ed9;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a class="header_logo text-logo" href="#">alexDev</a>
+        
+        <nav class="header_nav_links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <button class="header_cta">Contact</button>
+    </header>
+</body>
+</html>
