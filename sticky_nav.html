@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Bar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-family: "Afacad Flux", serif;
+        }
+
+        header {
+            padding: 12px 10%;
+            background-color: #1f1f1f;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+        }
+
+        .text-logo {
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 32px;
+            line-height: 0;
+            margin-right: auto;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        header .icon {
+            margin-right: 8px;
+        }
+
+        header img, header .icon {
+            cursor: pointer;
+        }
+        
+
+        body {
+            height: 200vh;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="text-logo">alexDEV</a>
+
+        <span class="icon material-icons">search</span>
+        <span class="icon material-icons">notifications</span>
+        <img src="https://avatar.iran.liara.run/public" alt="User's avatar" height="24px">
+    </header>
+</body>
+</html>
